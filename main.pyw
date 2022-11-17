@@ -1,18 +1,21 @@
-import PySimpleGUI as sg                        # Part 1 - The import
+import argparse
+from pytube import YouTube
 
-# Define the window's contents
-layout = [  [sg.Text("What's your name?")],     # Part 2 - The Layout
-            [sg.Input()],
-            [sg.Button('Ok')] ]
+def mp3():
+    print('mp3')
 
-# Create the window
-window = sg.Window('Window Title', layout)      # Part 3 - Window Defintion
+def mp4():
+    print('mp4')
 
-# Display and interact with the Window
-event, values = window.read()                   # Part 4 - Event loop or Window.read call
+parse = argparse.ArgumentParser()
 
-# Do something with the information gathered
-print('Hello', values[0], "! Thanks for trying PySimpleGUI")
+parse.add_argument('h',     help='Handbook of using mp3-yt-downloader.')
+parse.add_argument('mp3',   func=mp3   ,help='Download video in mp3 (only audio) format.')
+parse.add_argument('mp4',   func=mp4   ,help='Donwload a video in mp4 (video+audio) format.')
+parse.add_argument('a'   ,help='The author: https://github.com/Hue1337')
 
-# Finish up by removing from the screen
-window.close()                                  # Part 5 - Close the Window
+
+
+
+# if __name__ == '__main__':
+
