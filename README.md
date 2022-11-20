@@ -1,3 +1,9 @@
 # mp3-youtube-downloader
 
-# Educational purpose and non-commercial usage ONLY!
+
+# Licence: <a href="http://www.wtfpl.net/" />WFTPL</a>
+
+<a href="http://www.wtfpl.net/"><img
+       src="http://www.wtfpl.net/wp-content/uploads/2012/12/logo-220x1601.png"
+       alt="WTFPL" /></a>
+
