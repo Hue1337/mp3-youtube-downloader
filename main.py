@@ -26,11 +26,13 @@ def mp4_to_mp3(mp4FILE, mp3FILE):
     mp4_without_frames.close() 
 
 
-for file in os.listdir():
+if __name__ == '__main__':
 
-    if '.mp4' in file:
-
-        mp4_to_mp3(file, file[:len(file)-3]+'mp3')
-        com = 'rm "'+str(file)+'"'
-        os.system(com)
+    for file in os.listdir():
+    
+        if '.mp4' in file:
+        
+            mp4_to_mp3(file, file[:len(file)-3]+'mp3')
+            com = 'rm "'+str(file)+'"'
+            os.system(com)
 
